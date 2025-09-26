@@ -513,6 +513,10 @@
     gap: 4rem;
   }
 
+  .title::before {
+    display: none;
+  }
+
   .heroContent {
     max-width: 100%;
   }
@@ -830,10 +834,6 @@
 }
 
 @media (max-width: 370px) {
-  .title::before {
-    display: none;
-  }
-
   .title::after {
     top: -400px;
     left: -210px;
