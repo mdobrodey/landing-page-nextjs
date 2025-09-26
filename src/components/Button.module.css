@@ -1,0 +1,85 @@
+.button {
+  border-radius: 83px;
+  display: inline-block;
+  font-size: 1.5rem;
+  letter-spacing: -0.02em;
+  transition: all 0.2s ease;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.primary {
+  padding: 1.25rem 5rem;
+  background: linear-gradient(30deg, #237249 0%, #35c66b 100%);
+  color: #ffffff;
+  font-weight: 500;
+}
+
+.primary:hover {
+  box-shadow: 0 8px 25px rgba(35, 114, 73, 0.1);
+}
+
+.secondary {
+  padding: 1.25rem 3.5rem;
+  border: 1.02px solid #dadada;
+  background: #121517;
+  color: var(--description-color);
+  font-weight: 400;
+  letter-spacing: -0.03em;
+}
+
+.secondary:hover {
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+}
+
+.event {
+  padding: 0.8rem 4rem;
+  background: linear-gradient(245deg, #237249 0%, #35c66b 100%);
+  color: #ffffff;
+  font-weight: 600;
+  letter-spacing: -0.03em;
+}
+
+.event:hover {
+  opacity: 0.9;
+}
+
+@media (max-width: 768px) {
+  .primary,
+  .secondary {
+    font-size: 1.2rem;
+  }
+
+  .primary {
+    padding: 1rem 3rem;
+  }
+
+  .secondary {
+    padding: 1rem 2.5rem;
+  }
+
+  .event {
+    padding: 0.6rem 2.5rem;
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .primary,
+  .secondary {
+    font-size: 1rem;
+  }
+
+  .primary {
+    padding: 0.8rem 2rem;
+  }
+
+  .secondary {
+    padding: 0.8rem 1.8rem;
+  }
+
+  .event {
+    padding: 0.5rem 2rem;
+    font-size: 1.1rem;
+  }
+}

@@ -1,0 +1,145 @@
+.productCard {
+  width: 250px;
+  position: relative;
+  border-radius: 30px;
+  background-color: var(--background);
+  justify-content: center;
+}
+
+.productCard::before {
+  content: '';
+  position: absolute;
+  border-radius: 30px;
+  z-index: -5;
+  inset: -2px;
+  background: linear-gradient(
+    110deg,
+    rgba(218, 218, 218, 0.7) 0%,
+    rgba(218, 218, 218, 0.07) 42%,
+    rgba(218, 218, 218, 0.7) 100%
+  );
+  transition: background 0.5s ease;
+}
+
+.productCard:hover::before {
+  background: linear-gradient(
+    110deg,
+    rgba(35, 114, 73, 0.8) 0%,
+    rgba(53, 198, 107, 0.3) 42%,
+    rgba(35, 114, 73, 0.8) 100%
+  );
+}
+
+.productPrice {
+  margin: 0 2rem;
+  justify-content: center;
+}
+
+.productText {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.productImage {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  transition: transform 0.5s;
+}
+
+.productImage:hover {
+  transform: translateY(-5px);
+}
+
+.productImage .benefitCircle {
+  top: 52px;
+  background: linear-gradient(245deg, #237249 0%, #35c66b 100%);
+}
+
+.productImage img {
+  z-index: 10;
+}
+
+.productTitle {
+  font-weight: 500;
+  font-size: 2rem;
+  letter-spacing: -0.02em;
+  color: #fff;
+}
+
+.productDesc {
+  font-size: 1.25rem;
+  line-height: 163%;
+  max-width: 190px;
+  letter-spacing: -0.02em;
+  text-align: center;
+  color: #d9d9d9;
+}
+
+.priceWrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.priceValue {
+  font-weight: 500;
+  font-size: 2rem;
+  letter-spacing: -0.02em;
+  color: #fff;
+}
+
+.productMl {
+  font-size: 1.25rem;
+  letter-spacing: -0.02em;
+  color: #d9d9d9;
+}
+
+.productButton {
+  border-radius: 83px;
+  padding: 0.8rem 3rem;
+  margin: 1.4rem;
+  display: inline-block;
+  background: linear-gradient(
+    30deg,
+    var(--primary-color) 0%,
+    var(--secondary-color) 100%
+  );
+  font-weight: 600;
+  transition: all 0.2s ease;
+  color: var(--title-color);
+  text-decoration: none;
+  font-size: 1rem;
+  line-height: 146%;
+  letter-spacing: -0.02em;
+  color: var(--title-color);
+  cursor: pointer;
+}
+
+.productButton:hover {
+  box-shadow: 0 8px 25px rgba(35, 114, 73, 0.1);
+  opacity: 0.8;
+}
+
+@media (max-width: 768px) {
+  .productsDesc {
+    font-size: 1.05rem;
+  }
+
+  .productTitle {
+    font-size: 1.5rem !important;
+  }
+
+  .productDesc {
+    font-size: 1rem !important;
+  }
+
+  .priceValue {
+    font-size: 1.6rem;
+  }
+
+  .productMl {
+    margin-top: 0.2rem;
+  }
+}
