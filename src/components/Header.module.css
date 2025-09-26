@@ -17,6 +17,7 @@
 .nav {
   gap: 6rem;
   display: flex;
+  color: #fff;
 }
 
 .nav a {
