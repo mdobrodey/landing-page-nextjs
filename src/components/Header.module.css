@@ -17,12 +17,11 @@
 .nav {
   gap: 6rem;
   display: flex;
-  color: #fff;
 }
 
 .nav a {
   transition: all 0.2s ease;
-  color: black;
+  color: #fff;
 }
 
 .link {
@@ -109,6 +108,10 @@
     transition: right 0.3s ease;
     z-index: 1000;
     box-shadow: -2px 0 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .nav a {
+    color: black;
   }
 
   .navOpen {
