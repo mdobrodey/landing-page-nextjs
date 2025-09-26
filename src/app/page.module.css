@@ -702,6 +702,10 @@
     left: 80px;
   }
 
+  .heroImageContainer::after {
+    left: 70px;
+  }
+
   .wrapperText::before {
     left: 80px;
   }
@@ -727,6 +731,10 @@
     margin: 0 auto;
     padding-top: 1rem;
     align-items: center;
+  }
+
+  .heroImageContainer::after {
+    left: 16px;
   }
 
   .heroImageContainer {
@@ -822,6 +830,10 @@
 }
 
 @media (max-width: 370px) {
+  .title::before {
+    display: none;
+  }
+
   .title::after {
     top: -400px;
     left: -210px;
